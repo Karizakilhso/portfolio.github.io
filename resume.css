@@ -1,0 +1,160 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #e9f1f7;
+  padding: 40px 10%;
+}
+
+.resume-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #2e3a59;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+header .subtitle {
+  font-size: 1.4rem;
+  color: #8e8e8e;
+  margin-bottom: 10px;
+}
+
+header .subtitle a {
+  color: #2e3a59;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #006699;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #006699;
+  padding-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.8;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding-left: 1em;
+  position: relative;
+}
+
+ul li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #006699;
+  font-size: 1.4rem;
+  top: 0;
+}
+
+ul li a {
+  color: #006699;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Gradient Background */
+.resume-container {
+  background: linear-gradient(145deg, #ffffff, #f1f5f9);
+}
+
+/* Mobile-Friendly Design */
+@media (max-width: 768px) {
+  .resume-container {
+      padding: 25px;
+  }
+
+  header h1 {
+      font-size: 2.5rem;
+  }
+
+  header .subtitle {
+      font-size: 1.2rem;
+  }
+
+  button {
+      font-size: 1rem;
+      padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-container {
+      padding: 20px;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+
+  header .subtitle {
+      font-size: 1rem;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 10px;
+  }
+}

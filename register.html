@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Create an Account</h2>
+      <form id="registrationForm">
+        <!-- Personal Information Section -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="full-name">Full Name:</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="e.g., Kapla High Council"
+            required />
+
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required />
+
+          <label for="password">Password:</label>
+          <div class="password-container">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="********"
+              required />
+          </div>
+        </fieldset>
+
+        <!-- Gender Section -->
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+        </fieldset>
+
+        <!-- Additional Information Section -->
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="012 3456 789"
+            required />
+
+          <legend>Preferred Contact Methods</legend>
+          <label
+            ><input type="checkbox" name="contactMethod" value="email" />
+            Email</label
+          >
+          <label
+            ><input type="checkbox" name="contactMethod" value="phone" />
+            Phone</label
+          >
+          <label
+            ><input type="checkbox" name="contactMethod" value="sms" />
+            SMS</label
+          >
+
+          <label for="address">Address:</label>
+          <textarea
+            id="address"
+            name="address"
+            rows="4"
+            placeholder="e.g., Street, City, Postalcode, State, Country"
+            required></textarea>
+        </fieldset>
+
+        <label>
+          <input type="checkbox" id="terms" name="terms" required />
+          Accept Terms & Conditions
+        </label>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
